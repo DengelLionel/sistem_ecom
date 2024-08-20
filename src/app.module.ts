@@ -6,12 +6,12 @@ import { TypeOrmModule } from '@nestjs/typeorm';
   imports: [
     TypeOrmModule.forRoot({
       type:"mysql",
-      host:"mysql_db",
-      port:3307,
+      host:"localhost",
+      port:3306,
       database:'ecom_den',
       entities:[],
-      username:"ecom_user",
-      password:"password123",
+      username:"root",
+      password:"",
       synchronize:true
     } ),
   /*   UsersModule */
